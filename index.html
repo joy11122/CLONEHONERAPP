@@ -1,0 +1,220 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booticon/font/bootstrap-icons.min.css">
+ 
+</head>
+<body onload="showapp21()">
+    
+    <!--  -->
+    <div class="container d-flex   justify-content-center align-items-center appp">
+        
+        <!-- first app -->
+        <div class="app" id="app">
+            <div class="first p-3">
+                <div class="d-flex justify-content-between text-light">
+                    <a href=""><i class="bi bi-alexa text-light"></i></a>
+                    <a href="" class="text-light text-decoration-none fw-bold">My Music</a>
+                   <i onclick="searchSong()" class="bi bi-search"></i>
+                </div>
+                
+                <div>
+                <i class="bi bi-file-earmark-music text-align-center d-flex justify-content-center display-2 mt-5"></i>
+                <div class="d-flex justify-content-between align-items-center mb-0 mt-3">
+                    <h4 onclick="showapp2()" id="apptitle">Ishare Tere__Guru Randha... </h4>
+                    <i id="appplay" onclick="playcurrent()" class="bi bi-play ms-2 p-2 border rounded-circle"></i>
+                 
+                </div>
+                   <div id="appartist">Unknown Artist</div>
+            </div>
+          </div>
+            <!-- firstdiv done -->
+            <div class="d-flex seconddiv ">
+                <div class="second d-flex justify-content-center align-items-center ">
+               <div class=" ">
+      <i class="bi bi-file-earmark-music display-4"></i>
+         
+               </div>
+               <div class="mt-2 ms-2 allsong">
+                   <span>All Songs</span>
+                   <p id="allsongcount" class="">111 songs</p>
+           
+               </div>
+                         </div>
+                
+                
+                
+                <div class="third d-flex justify-content-center align-items-center ">
+               <div class=" ">
+      <i class="bi bi-heart display-4"></i>
+         
+               </div>
+               <div class="mt-2 ms-2" onclick="showfavsong()">
+                   <span>Favourite</span>
+                   <p id="favsongcount" class="">111 songs</p>
+           
+               </div>
+                         </div>
+            </div>
+            
+            
+            <div class="d-flex lastdiv">
+               <div class="fourth d-flex justify-content-center align-items-center ">
+               <div class=" ">
+      <i class="bi bi-list-task display-4"></i>
+         
+               </div>
+               <div class="mt-2 ms-2">
+                   <span>PlayLists</span>
+                   <p class="">111 songs</p>
+           
+               </div>
+                         </div>
+                         
+                           <div class="five d-flex justify-content-center align-items-center ">
+               <div class=" ">
+      <i class="bi bi-alarm display-4"></i>
+         
+               </div>
+               <div class="mt-2 ms-2" onclick="showfavsong()">
+                   <span>Recents</span>
+                   <p id="recentsongcount">11 songs</p>
+           
+               </div>
+                         </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- 2nd app -->
+    
+    
+   
+        <div class="app2 p-3" id="app2">
+            <div class="d-flex justify-content-center align-items-center  gap-3">
+    <i class="bi bi-instagram"></i>
+     <h3 id="app2title" class="text-center">Kala sasma__ Bar_Bdisplay-53>
+            </div>
+            <div id="app2artist" class="mt-0 text-center ">unknow artist</div>
+            
+            <div class="d-flex justify-content-center align-items-center mt-3 ">
+                <i class="bi bi-soundwave me-2"></i>
+                <input type="range"class="w-75">
+            </div>
+            
+            <div class="mt-4 justify-content-center align-items-center d-flex">
+                <img class="w-50 rounded-circle border" src="images/card1.jpg" alt="">
+            </div>
+            
+            
+            <div class="d-flex justify-content-center align-items-center mt-4 gap-4 ">
+                <i class="bi bi-plus fw-bold display-5"></i>
+                <i class="bi bi-three-dots-vertical  display-6"></i>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-3 ">
+                <span>00:00</span>
+                <input type="range" class="w-75">
+                <span>00:00</span>
+            </div>
+            
+            <audio id="audio" src="honormusic/teri_batone_aise_uljha.mp3" controls hidden></audio>
+            <div class="d-flex justify-content-between align-items-center mt-5">
+                <i class="bi bi-repeat fw-bold display-6"></i>
+                <div class="d-flex justify-content-between align-items-center ">
+                    <i onclick="playprevious()"class="bi bi-arrow-left-circle-fill display-5"></i>
+                    <i id="app2play" class="bi bi-play-circle-fill display-1 fw-bold p-2"></i>
+                    <i onclick="playnext()" class="bi bi-arrow-right-circle-fill display-5"></i>
+                </div>
+                <i id="fav" onclick="favsong()" class="bi bi-heart fw-bold text-danger display-6"></i>
+            </div>
+        </div>
+   
+    
+    
+    <!-- 3rd app -->
+   
+        <div class="app3 ps-3 pe-3 overflow-hidden" id="app3">
+            <div class="d-flex justify-content-between align-items-center ">
+                <div class="d-flex justify-content-center align-items-center ">
+                 <i class="bi bi-arrow-left display-6"></i>  
+                 <span class="fw-bold ms-3">All Song</span>
+                 </div>
+                <div>
+                    <i class="bi bi-plus me-3 display-4"></i>
+                    <i class="bi bi-search display-6"></i>
+                </div>
+            </div>
+            <hr>
+         
+    <div class=" d-flex justify-content-center align-items-center ">
+      <div class="btn-group border">
+            <a href="/" class="text-decoration-none text-light btn btn-danger">Songs</a>
+          <a href="/" class="text-decoration-none text-light btn border  ">Artist</a>
+            <a href="/" class="text-decoration-none text-light btn  border">Album</a>
+              <a href="/" class="text-decoration-none text-light btn  border ">Folder</a>   
+            
+            </div>
+              
+        </div>
+        
+        
+        
+        <div class=" song-area">
+        <!-- first song -->
+      
+        <!-- end firat song -->
+       
+        
+        
+        
+        
+        </div>
+        </div>     
+        
+        <!-- search app4 -->
+         <div class="app4 <!--  -->overflow-hidden" id="app4">
+       <div class="d-flex justify-content-between align-items-center ">
+           
+           <i class="bi bi-arrow-left display-6"></i>
+           <input id="input" onchange="livesearchSong()"class="w-75 p-1 rounded-4 " type="text" placeholder="Search For Songs...">
+           <i class="bi bi-search display-6"></i>
+       </div>
+    
+        
+        
+        
+        
+        <div class=" song-area">
+      
+        
+      
+        </div>
+        
+    </div>     
+        
+        
+    </div>
+    
+    
+  
+    
+    <script  src="script.js"></script>
+    
+</body>
+</html>
